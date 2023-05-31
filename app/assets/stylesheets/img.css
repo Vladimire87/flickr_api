@@ -1,0 +1,31 @@
+img {
+  max-width: 100%;
+}
+
+.image-card {
+  padding-bottom: 16px;
+  margin: auto;
+  margin-bottom: 16px;
+  max-width: 755px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  text-align: left;
+}
+
+.card-header,
+h4,
+p {
+  margin: 0;
+  text-align: left;
+  padding: 6px;
+}
+
+.card-header p {
+  font-size: 14px;
+}

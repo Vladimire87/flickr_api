@@ -1,0 +1,25 @@
+<div class="nav-bar">
+  <%= form_with(url: "/", method: 'get', local: true) do %>
+    <li>
+      <%= text_field_tag :flickr_user_id, "198429347@N02", placeholder: "Enter User ID", style: "text-align: center;" %>
+      <%= submit_tag 'Show' %>
+    </li>
+  <% end %>
+</div>
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+<% @photo_ids.each do |photo_id| %>
+  <div class="image-card">
+    <div class="card-header">
+      <div>
+        <%= content_tag :h4, "Tess id: #{photo_id['id']}" %>
+        <%= content_tag :p, "Creator: #{photo_id['owner']['username']}" %>
+      </div>
+    </div>
+    <div><%= image_tag Flickr.url_b(photo_id) %></div>
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi cum in molestiae, enim quas necessitatibus inventore ab quibusdam? Id sint nisi libero voluptatibus provident sequi enim placeat, facere atque.</p>
+    </div>
+  </div>
+<% end %>

@@ -6,7 +6,7 @@ class PagesController < ApplicationController
     begin
       flickr = Flickr.new(ENV['flickr_key'], ENV['flickr_secret'])
       if params[:flickr_user_id].blank?
-        flash.now[:notice] = 'Enter ID'
+        flash.now[:notice] = 'Enter ID and press "Show"'
         @photo_ids = [] # Set empty array since there is no search
       else
         photos = flickr.photos.search(user_id: params[:flickr_user_id])

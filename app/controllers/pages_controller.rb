@@ -17,6 +17,5 @@ class PagesController < ApplicationController
       puts "Error: #{e.message}"
       @photo_ids = [] # Set an empty array in case of error
     end
-    console
   end
 end

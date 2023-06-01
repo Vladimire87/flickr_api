@@ -5,7 +5,7 @@ img {
 .image-card {
   padding-bottom: 16px;
   margin: auto;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   max-width: 755px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -22,10 +22,18 @@ img {
 h4,
 p {
   margin: 0;
+}
+
+.card-header,
+p {
+  font-size: 14px;
   text-align: left;
+}
+
+.card-text {
   padding: 6px;
 }
 
-.card-header p {
-  font-size: 14px;
+.share-btns {
+  text-align: left;
 }

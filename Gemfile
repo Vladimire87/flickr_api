@@ -74,6 +74,5 @@ end
 
 gem "figaro"
 gem 'flickr', '~> 2.0', '>= 2.0.2'
-gem 'social-share-button'
 
 gem "dockerfile-rails", ">= 1.4", :group => :development
